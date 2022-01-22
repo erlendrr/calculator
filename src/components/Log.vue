@@ -5,7 +5,7 @@
 	>
 		<div class="pb-4 flex justify-between items-center">
 			<h1 class="text-xl">Log</h1>
-			<button @click="emit('clear')" class="bg-red-400 text-black rounded-xl p-4 select-none text-xl">Clear</button>
+			<button @click="emit('clear')" class="hover:bg-red-300 bg-red-400 text-black rounded-xl p-4 select-none text-xl">Clear</button>
 		</div>
 		<div class="p-1 border-b border-zinc-700" v-for="(entry, i) in log" :key="i">
 			{{ entry }}

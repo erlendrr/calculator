@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		<div class="buttons grid grid-cols-4 gap-4 mt-4">
-			<button @click="AC()" class="bg-orange-400 text-black col-span">AC</button>
+			<button @click="AC()" class="hover:bg-orange-200 bg-orange-400 text-black col-span">AC</button>
 			<div></div>
 			<div></div>
 			<button @click="divide()" class="action">÷</button>
@@ -30,8 +30,8 @@
 			<button @click="add()" class="action">+</button>
 			<button @click="onNumClick(0)" class="num">0</button>
 			<button @click="onDotClick()" class="num">.</button>
-			<button @click="del()" class="bg-red-400 text-black">DEL</button>
-			<button @click="equals()" class="bg-green-300 text-black">=</button>
+			<button @click="del()" class="hover:bg-red-300 bg-red-400 text-black">DEL</button>
+			<button @click="equals()" class="hover:bg-green-200 bg-green-300 text-black">=</button>
 		</div>
 	</div>
 </template>
@@ -191,9 +191,9 @@ document.addEventListener('keydown', (event: KeyboardEvent) => {
 }
 
 .num {
-	@apply bg-zinc-700;
+	@apply hover:bg-zinc-600 bg-zinc-700;
 }
 .action {
-	@apply bg-blue-300 text-black;
+	@apply hover:bg-blue-200 bg-blue-300 text-black;
 }
 </style>
