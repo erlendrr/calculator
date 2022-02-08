@@ -10,7 +10,7 @@ export const key: InjectionKey<Store<State>> = Symbol()
 export const store = createStore<State>({
 	state() {
 		return {
-			count: 0,
+			count: 1,
 		}
 	},
 	mutations: {

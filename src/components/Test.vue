@@ -8,7 +8,7 @@ import { key } from '../store/index'
 
 const store = useStore(key)
 
-store.state.count // typed as number
+console.log(store.state.count)
 </script>
 
 <style lang="scss" scoped></style>
