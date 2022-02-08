@@ -1,5 +1,10 @@
 <template>
 	<div class="flex flex-col h-screen text-white space-y-4">
+		<router-link
+			class="bg-slate-700 w-fit mx-auto m-2 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md hover:bg-grape-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-grape-500"
+			to="/contact"
+			>Contact</router-link
+		>
 		<Calculator @addToLog="addToLog" />
 		<transition
 			enter-active-class="transition ease-out duration-600"

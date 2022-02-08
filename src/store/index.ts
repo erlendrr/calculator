@@ -1,8 +1,14 @@
 import { InjectionKey } from 'vue'
 import { createStore, Store } from 'vuex'
 
+export interface Person {
+	fName: string
+	lName: string
+	email: string
+}
+
 export interface State {
-	count: number
+	person: Person
 }
 
 export const key: InjectionKey<Store<State>> = Symbol()
@@ -10,12 +16,16 @@ export const key: InjectionKey<Store<State>> = Symbol()
 export const store = createStore<State>({
 	state() {
 		return {
-			count: 1,
+			person: {
+				fName: '',
+				lName: '',
+				email: '',
+			},
 		}
 	},
 	mutations: {
-		increment(state) {
-			state.count++
+		setPerson(state, person: Person) {
+			state.person = person
 		},
 	},
 })
