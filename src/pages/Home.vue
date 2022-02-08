@@ -1,6 +1,5 @@
 <template>
 	<div class="flex flex-col h-screen text-white space-y-4">
-		<NavBar />
 		<Calculator @addToLog="addToLog" />
 		<transition
 			enter-active-class="transition ease-out duration-600"
@@ -17,7 +16,6 @@
 
 <script setup lang="ts">
 import Calculator from '@/components/Calculator.vue'
-import NavBar from '@/components/NavBar.vue'
 import Log from '@/components/Log.vue'
 import { Ref, ref } from 'vue'
 
